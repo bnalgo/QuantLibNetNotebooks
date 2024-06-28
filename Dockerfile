@@ -42,7 +42,7 @@ RUN dotnet add package QuantLib --version 1.34.0
 
 WORKDIR $HOME
 
-COPY *.ipynb $HOME
+COPY *.ipynb $HOME/
 
 WORKDIR $HOME
 CMD ["jupyter", "notebook", "--ip", "0.0.0.0"]
